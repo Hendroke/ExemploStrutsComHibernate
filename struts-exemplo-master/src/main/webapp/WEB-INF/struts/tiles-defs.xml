@@ -1,0 +1,29 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+"http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+<tiles-definitions>
+
+   <definition name="template" path="/pages/tiles/template.jsp">
+      <put name="head" value="/pages/tiles/head.jsp" />
+      <put name="header" value="/pages/tiles/header.jsp" />
+      <put name="footer" value="/pages/tiles/footer.jsp" />
+   </definition>
+
+	<definition name=".fabricanteTiles" extends="template">
+  		<put name="body" value="/pages/restrito/fabricante/fabricante.jsp" />
+  		<put name="menu" value="/pages/restrito/menuInterno.jsp" />
+  	</definition>
+  	
+  	<definition name=".editarFabricanteTiles" extends="template">
+  		<put name="body" value="/pages/restrito/fabricante/editarFabricante.jsp" />
+  		<put name="menu" value="/pages/restrito/menuInterno.jsp" />
+  	</definition>
+  	
+  	<definition name=".bodyTiles" extends="template">
+  		<put name="body" value="/pages/restrito/bodyInterno.jsp" />
+  		<put name="menu" value="/pages/restrito/menuInterno.jsp" />
+  	</definition>
+
+
+
+</tiles-definitions>
